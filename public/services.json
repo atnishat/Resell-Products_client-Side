@@ -1,0 +1,36 @@
+[
+    {
+      "_id": 1,
+      "name": "Bedroom",
+      "image":"https://i.ibb.co/m4KskTM/bed.jpg"
+     
+    },
+    {
+      "_id": 2,
+      "name": "Study Room",
+      "image":"https://i.ibb.co/602wDWS/study.jpg"
+     
+    },
+    {
+      "_id": 3,
+      "name": "Kitchen",
+      "image":"https://i.ibb.co/ZBnG6gm/kitchen.jpg"
+    
+    },
+    {
+      "_id": 4,
+      "name": "Office",
+      "image":"https://i.ibb.co/KyBD0B4/office.jpg"
+      
+    },
+    {
+      "_id": 5,
+      "name": "Living Room",
+      "image":"https://i.ibb.co/nC9b67G/living.jpg"
+    },
+    {
+      "_id": 6,
+      "name": "Dinning Room",
+      "image":"https://i.ibb.co/YL1qjMG/dining-room.jpg"
+    }
+  ]
