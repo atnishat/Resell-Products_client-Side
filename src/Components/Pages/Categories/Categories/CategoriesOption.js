@@ -9,7 +9,7 @@ const CategoriesOption = ({ appointmentOption}) => {
         <div className="card-body text-center">   
             <img src={image} alt="" id='card-img' />
             <h2 className="text-3xl text-white font-bold text-center">{name}</h2>
-            <Link to={`/categoriesOption/${_id}`}>
+            <Link to={`/category/${_id}`}>
                 <button className="btn btn-primary ">
                     Explore More
                     </button>

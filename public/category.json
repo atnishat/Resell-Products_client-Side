@@ -1,193 +1,102 @@
 [
-    {
-     
-      "others_info": {
-        "originalPrice": false,
-        "resaleprice": true
-      },
-      "category_id": "001",
-      "rating": { "number": 4.5, "badge": "Excellent" },
-      "time": 488,
-      "year of use":"1",
-      "title": "Designer Bed",
-      "author": {
-        "name": "ahbab shahin",
-        "published_date": "2022-08-24 17:27:34",
-        "img": "https://i.ibb.co/R99DcG0/bed.jpg"
-      },
-      "details": ""
-    },
-    {
-     
-      "others_info": {
-        "originalPrice": false,
-        "resaleprice": true
-      },
-      "category_id": "001",
-      "rating": { "number": 4.5, "badge": "Excellent" },
-      "time": 488,
-      "year of use":"1",
-      "title": "dressing table",
-      "author": {
-        "name": "ahsan habib",
-        "published_date": "2022-08-24 17:27:34",
-        "img": "https://i.ibb.co/zRvJfNj/Dressing-Table-with-Mirror.jpg"
-      },
-      "details": ""
-    },
-
-    {
-     
-      "others_info": {
-        "originalPrice": false,
-        "resaleprice": true
-      },
-      "category_id": "002",
-      "rating": { "number": 4.5, "badge": "Excellent" },
-      "time": 488,
-      "year of use":"1",
-      "title": "Study Table",
-      "author": {
-        "name": "ahsanul haq",
-        "published_date": "2022-08-24 17:27:34",
-        "img": "https://i.ibb.co/t2HrLpz/table.jpg"
-      },
-      "details": ""
-    },
-    {
-     
-      "others_info": {
-        "originalPrice": false,
-        "resaleprice": true
-      },
-      "category_id": "002",
-      "rating": { "number": 4.5, "badge": "Excellent" },
-      "time": 488,
-      "year of use":"1",
-      "title": "Easy chair",
-      "author": {
-        "name": "anonna chairy",
-        "published_date": "2022-08-24 17:27:34",
-        "img": "https://i.ibb.co/T2B3DRx/chair.jpg"
-      },
-      "details": ""
-    },
-
-    {
-     
-      "others_info": {
-        "originalPrice": false,
-        "resaleprice": true
-      },
-      "category_id": "003",
-      "rating": { "number": 4.5, "badge": "Excellent" },
-      "time": 488,
-      "year of use":"1",
-      "title": "kitchen-cabinet",
-      "author": {
-        "name": "tasni jaman",
-        "published_date": "2022-08-24 17:27:34",
-        "img": "https://i.ibb.co/gmSDxKV/kitchen.jpg"
-      },
-      "details": ""
-    },
-    {
-     
-      "others_info": {
-        "originalPrice": false,
-        "resaleprice": true
-      },
-      "category_id": "003",
-      "rating": { "number": 4.5, "badge": "Excellent" },
-      "time": 488,
-      "year of use":"1",
-      "title": "kitchen cabinet",
-      "author": {
-        "name": "nishat",
-        "published_date": "2022-08-24 17:27:34",
-        "img": "https://i.ibb.co/j8q5kBQ/Kitchen-Furniture-Design.jpg"
-      },
-      "details": ""
-    },
-
-    {
-     
-      "others_info": {
-        "originalPrice": false,
-        "resaleprice": true
-      },
-      "category_id": "004",
-      "rating": { "number": 4.5, "badge": "Excellent" },
-      "time": 488,
-      "year of use":"1",
-      "title": "",
-      "author": {
-        "name": "ahbab shahin",
-        "published_date": "2022-08-24 17:27:34",
-        "img": ""
-      },
-      "details": ""
-    },
-
-    {
-     
-      "others_info": {
-        "originalPrice": false,
-        "resaleprice": true
-      },
-      "category_id": "004",
-      "rating": { "number": 4.5, "badge": "Excellent" },
-      "time": 488,
-      "year of use":"1",
-      "title": "",
-      "author": {
-        "name": "ahbab shahin",
-        "published_date": "2022-08-24 17:27:34",
-        "img": ""
-      },
-      "details": ""
-    
-    },
-
-    {
-     
-      "others_info": {
-        "originalPrice": false,
-        "resaleprice": true
-      },
-      "category_id": "005",
-      "rating": { "number": 4.5, "badge": "Excellent" },
-      "time": 488,
-      "year of use":"1",
-      "title": "",
-      "author": {
-        "name": "ahbab shahin",
-        "published_date": "2022-08-24 17:27:34",
-        "img": ""
-      },
-      "details": ""
-    
-    },
-    {
-     
-      "others_info": {
-        "originalPrice": false,
-        "resaleprice": true
-      },
-      "category_id": "006",
-      "rating": { "number": 4.5, "badge": "Excellent" },
-      "time": 488,
-      "year of use":"1",
-      "title": "",
-      "author": {
-        "name": "ahbab shahin",
-        "published_date": "2022-08-24 17:27:34",
-        "img": ""
-      },
-      "details": ""
-    
-    
-    }
-
-    
-  ]
+  {
+    "originalPrice": "$12000",
+    "resaleprice": "$8000",
+    "id": "63803e2bea67f24e0700fe47",
+    "yearofuse": "8 month",
+    "title": "Designer Bed",
+    "name": "Ahbab Shahin",
+    "published_date": "2022-08-24 17:27:34",
+    "img": "https://i.ibb.co/R99DcG0/bed.jpg"
+  },
+  {
+    "originalPrice": "$2000",
+    "resaleprice": "$1500",
+    "id": "63803e2bea67f24e0700fe47",
+    "yearofuse": "6 month",
+    "title": "Dressing Table",
+    "name": "Ahsan Habib",
+    "published_date": "2022-08-24 17:27:34",
+    "img": "https://i.ibb.co/zRvJfNj/Dressing-Table-with-Mirror.jpg"
+  },
+  {
+    "originalPrice": "$1400",
+    "resaleprice": "$900",
+    "id": "63803e2bea67f24e0700fe48",
+    "yearofuse": "2 month",
+    "title": "Study Table",
+    "name": "ahsanul haq",
+    "published_date": "2022-08-24 17:27:34",
+    "img": "https://i.ibb.co/t2HrLpz/table.jpg"
+  },
+  {
+    "originalPrice": "$1460",
+    "resaleprice": "$500",
+    "id": "63803e2bea67f24e0700fe48",
+    "yearofuse": "2.5 month",
+    "title": "Easy chair",
+    "name": "Anonna Chairy",
+    "published_date": "2022-08-24 17:27:34",
+    "img": "https://i.ibb.co/T2B3DRx/chair.jpg"
+  },
+  {
+    "originalPrice": "$1380",
+    "resaleprice": "$960",
+    "id": "63803e2bea67f24e0700fe49",
+    "yearofuse": "7.5 month",
+    "title": "kitchen-cabinet",
+    "name": "TasniM jaman",
+    "published_date": "2022-08-24 17:27:34",
+    "img": "https://i.ibb.co/gmSDxKV/kitchen.jpg"
+  },
+  {
+    "originalPrice": "$2380",
+    "resaleprice": "$1960",
+    "id": "63803e2bea67f24e0700fe49",
+    "yearofuse": "6.5 month",
+    "title": "kitchen cabinet",
+    "name": "nishat",
+    "published_date": "2022-08-24 17:27:34",
+    "img": "https://i.ibb.co/j8q5kBQ/Kitchen-Furniture-Design.jpg"
+  },
+  {
+    "originalPrice": "$3380",
+    "resaleprice": "$2960",
+    "id": "63803e2bea67f24e0700fe49",
+    "yearofuse": "7.5 month",
+    "title": "Sofa",
+    "name": "ahbab shahin",
+    "published_date": "2022-08-24 17:27:34",
+    "img": ""
+  },
+  {
+    "originalPrice": "$3380",
+    "resaleprice": "$2960",
+    "id": "63803e2bea67f24e0700fe49",
+    "yearofuse": "7.5 month",
+    "title": "",
+    "name": "ahbab shahin",
+    "published_date": "2022-08-24 17:27:34",
+    "img": ""
+  },
+  {
+    "originalPrice": "$3380",
+    "resaleprice": "$2960",
+    "id": "63803e2bea67f24e0700fe47",
+    "yearofuse": "7.5 month",
+    "title": "",
+    "name": "ahbab shahin",
+    "published_date": "2022-08-24 17:27:34",
+    "img": ""
+  },
+  {
+    "originalPrice": "$3380",
+    "resaleprice": "$2960",
+    "id": "63803e2bea67f24e0700fe48",
+    "yearofuse": "7.5 month",
+    "title": "",
+    "name": "ahbab shahin",
+    "published_date": "2022-08-24 17:27:34",
+    "img": ""
+  }
+]
