@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Login.css';
 import img from '../../../asset/log-sign/login1.jpg'
+import { AuthContext } from '../../../contexts/AuthProvider';
 
 
 
@@ -10,7 +11,7 @@ import img from '../../../asset/log-sign/login1.jpg'
 const Login = () => {
 
     const { register, formState: { errors }, handleSubmit } = useForm();
-    // const { signIn } = useContext(AuthContext);
+    const { signIn } = useContext(AuthContext);
     const [loginError, setLoginError] = useState('');
     const location = useLocation();
     const navigate = useNavigate();
@@ -20,16 +21,16 @@ const Login = () => {
     const handleLogin = data => {
         console.log(data);
         setLoginError('');
-        // signIn(data.email, data.password)
-        // .then(result => {
-        //     const user = result.user;
-        //     console.log(user);
+        signIn(data.email, data.password)
+        .then(result => {
+            const user = result.user;
+            console.log(user);
         //     navigate(from, {replace: true});
-        // })
-        // .catch(error => {
-        //     console.log(error.message)
-        //     setLoginError(error.message);
-        // });
+        })
+        .catch(error => {
+            console.log(error.message)
+            setLoginError(error.message);
+        });
     }
 
 
@@ -38,9 +39,9 @@ const Login = () => {
         <div className='h-[800px] flex justify-right items-center'>
             <img src={img} alt="login" className='from-img' />
             <div className='w-96 p-7 form-box'>
-            
+
                 <h2 className='text-xl text-center'>Login</h2>
-                
+
                 <form onSubmit={handleSubmit(handleLogin)}>
                     <div className="form-control w-full max-w-xs">
                         <label className="label"> <span className="label-text">Email</span></label>
