@@ -25,7 +25,7 @@ const Categories = () => {
 
     return (
         <div  className='my-16'>
-            <p className='text-center text-secondary font-bold'>Available Appointments on </p>
+            <p className='text-left text-4xl ml-6 text-white font-bold'>Categories of  second-hand product  </p>
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6'>
                 {
                     appointmentOption.map(option => <CategoriesOption
