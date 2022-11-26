@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './signup.css'
 import img from '../../../asset/log-sign/login1.jpg'
 import { AuthContext } from '../../../contexts/AuthProvider';
@@ -11,6 +11,12 @@ const SignUp = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const { createUser, updateUser } = useContext(AuthContext);
     const [signUpError, setSignUPError] = useState('')
+    const navigate = useNavigate();
+
+
+
+
+
     const handleSignUp = (data) => {
         console.log(data);
         setSignUPError('');
@@ -23,7 +29,9 @@ const SignUp = () => {
                     displayName: data.name
                 }
                 updateUser(userInfo)
-                    .then(() => { })
+                    .then(() => {
+                        navigate('/');
+                    })
                     .catch(err => console.log(err));
             })
             .catch(error => {
@@ -31,6 +39,9 @@ const SignUp = () => {
                 setSignUPError(error.message)
             });
     }
+
+
+
     return (
         <div className='h-[800px] flex justify-center items-center'>
             <img src={img} alt="" className='from-img' />
