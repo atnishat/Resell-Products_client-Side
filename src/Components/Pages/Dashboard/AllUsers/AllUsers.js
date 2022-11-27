@@ -27,6 +27,7 @@ const AllUsers = () => {
             if(data.modifiedCount > 0){
                 toast.success('Make admin successful.')
                 refetch();
+                
             }
             // console.log(data);
         })
