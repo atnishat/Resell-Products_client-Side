@@ -5,20 +5,25 @@ import './signup.css'
 import img from '../../../asset/log-sign/login1.jpg'
 import { AuthContext } from '../../../contexts/AuthProvider';
 import toast from 'react-hot-toast';
+import useToken from '../../../hooks/Usetooken';
 
 
 const SignUp = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const { createUser, updateUser } = useContext(AuthContext);
     const [signUpError, setSignUPError] = useState('')
+    const [createdUserEmail, setCreatedUserEmail] = useState('')
+    const [token] = useToken(createdUserEmail);
     const navigate = useNavigate();
 
-
+    if(token){
+        navigate('/');
+    }
 
 
 
     const handleSignUp = (data) => {
-        console.log(data);
+        // console.log(data);
         setSignUPError('');
         createUser(data.email, data.password)
             .then(result => {
@@ -30,7 +35,7 @@ const SignUp = () => {
                 }
                 updateUser(userInfo)
                     .then(() => {
-                        navigate('/');
+                        saveUser(data.name, data.email)
                     })
                     .catch(err => console.log(err));
             })
@@ -40,6 +45,22 @@ const SignUp = () => {
             });
     }
 
+    const saveUser = (name, email) => {
+        const user = { name, email };
+        fetch('http://localhost:5000/users', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then(res => res.json())
+            .then(data => {
+                // navigate('/');
+                setCreatedUserEmail(email);
+                // console.log('data',data);
+            })
+    }
 
 
     return (
