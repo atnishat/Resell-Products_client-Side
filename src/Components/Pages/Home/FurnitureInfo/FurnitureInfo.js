@@ -1,5 +1,4 @@
 import React from 'react';
-
 import sofa from '../../../../asset/furniture/Best-Furniture.jpg'
 
 

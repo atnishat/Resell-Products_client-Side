@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 
 const ProductIption = ({ pro , setAllCategories}) => {
     const { title,originalPrice,resaleprice,name,yearofuse,published_date,img} = pro
@@ -22,11 +22,10 @@ const ProductIption = ({ pro , setAllCategories}) => {
                 </div>
                 {  <div className="card-actions justify-center">
                 <label
-                    // disabled={slots.length === 0}
                     htmlFor="booking-modal"
                     className="btn btn-primary text-white"
                     onClick={() => setAllCategories(pro)}
-                >Book Appointment</label>
+                >Book Now</label>
             </div> 
                 }
             </div>
@@ -35,13 +34,3 @@ const ProductIption = ({ pro , setAllCategories}) => {
 };
 
 export default ProductIption;
-
-
-//    {/* <div className="card-actions justify-center">
-//                 <label
-//                     // disabled={slots.length === 0}
-//                     htmlFor="booking-modal"
-//                     className="btn btn-primary text-white"
-//                     // onClick={() => setTreatment(appointmentOption)}
-//                 >Book Appointment</label>
-//             </div> */}

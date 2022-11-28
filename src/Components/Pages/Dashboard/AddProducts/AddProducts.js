@@ -56,7 +56,7 @@ const AddProducts = () => {
                         image: imgData.data.url
                     }
 
-                    // save doctor information to the database
+                    // save products information to the database
                     fetch('https://used-products-server-side.vercel.app/products', {
                         method: 'POST',
                         headers: {

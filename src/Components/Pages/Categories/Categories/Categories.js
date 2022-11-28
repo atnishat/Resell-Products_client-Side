@@ -23,7 +23,7 @@ const Categories = () => {
                     appointmentOption.map(option => <CategoriesOption
                         key={option._id}
                         appointmentOption={option}
-                        // setTreatment={setTreatment}
+                       
                     ></CategoriesOption>)
                 }
             </div>
