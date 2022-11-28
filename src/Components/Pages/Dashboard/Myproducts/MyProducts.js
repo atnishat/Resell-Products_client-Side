@@ -22,7 +22,7 @@ const MyProducts = () => {
         queryKey: ['products'],
         queryFn: async () => {
             try {
-                const res = await fetch('http://localhost:5000/products', {
+                const res = await fetch('https://used-products-server-side.vercel.app/products', {
                     headers: {
                         authorization: `bearer ${localStorage.getItem('accessToken')}`
                     }
@@ -38,7 +38,7 @@ const MyProducts = () => {
 
     
     const handleDeleteDoctor = product => {
-        fetch(`http://localhost:5000/products/${product._id}`, {
+        fetch(`https://used-products-server-side.vercel.app/products/${product._id}`, {
             method: 'DELETE', 
             headers: {
                 authorization: `bearer ${localStorage.getItem('accessToken')}`
@@ -48,7 +48,7 @@ const MyProducts = () => {
         .then(data => {
             if(data.deletedCount > 0){
                 refetch();
-                toast.success(`Doctor ${product.name} deleted successfully`)
+                toast.success(`Your Products deleted successfully`)
             }
         })
     }

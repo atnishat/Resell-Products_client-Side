@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import Blog from "../Components/Blogs/Blog";
 import Categories from "../Components/Pages/Categories/Categories/Categories";
 import AddProducts from "../Components/Pages/Dashboard/AddProducts/AddProducts";
 import AllUsers from "../Components/Pages/Dashboard/AllUsers/AllUsers";
@@ -35,13 +36,17 @@ export const router = createBrowserRouter([
                 element:<SignUp></SignUp>
             },
             {
+                path:'/blog',
+                element:<Blog></Blog>
+            },
+            {
                 path:'/categories/:id',
                 element:<Categories></Categories>
             },
             {
                 path:'/category/:id',
                 element:<Product></Product>,
-                loader: ({params})  => fetch(`http://localhost:5000/category/${params.id}`)
+                loader: ({params})  => fetch(`https://used-products-server-side.vercel.app/category/${params.id}`)
                 
             }
         

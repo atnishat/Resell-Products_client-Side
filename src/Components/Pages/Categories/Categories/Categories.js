@@ -9,7 +9,7 @@ const Categories = () => {
     const { data: appointmentOption = [], isLoading } = useQuery({
         queryKey: ['categoriesOption'],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/categoriesOption`);
+            const res = await fetch(`https://used-products-server-side.vercel.app/categoriesOption`);
             const data = await res.json();
             return data
         }
@@ -17,7 +17,7 @@ const Categories = () => {
 
 
     // useEffect( () =>{
-    //     fetch('http://localhost:5000/categoriesOption')
+    //     fetch('https://used-products-server-side.vercel.app/categoriesOption')
     //     .then(res => res.json())
     //     .then(data => setAppointmentOption(data))
     // },[])
