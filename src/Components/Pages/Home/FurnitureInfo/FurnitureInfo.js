@@ -1,69 +1,35 @@
 import React from 'react';
-import Furniture from './Furniture';
-import chair from '../../../../asset/furniture/images2.jpg'
-import sofa from '../../../../asset/furniture/Best-Furniture.jpg'
-import easysofa from '../../../../asset/furniture/table.jpg'
 
+import sofa from '../../../../asset/furniture/Best-Furniture.jpg'
 
 
 const FurnitureInfo = () => {
 
-    const cardData = [
-        {
-            id: 1,
-            name: 'Chair',
-            description: 'Open 9.00 am to 5.00pm everyday',
-            icon: chair,
-            // bgClass: 'bg-gradient-to-r from-primary to-secondary'
-        },
-        {
-            id: 2,
-            name: 'table',
-            description: 'Open 9.00 am to 5.00pm everyday',
-            icon: sofa,
-            // bgClass: 'bg-accent'
-        },
-        {
-            id: 3,
-            name: 'chair',
-            description: 'Open 9.00 am to 5.00pm everyday',
-            icon: easysofa,
-            bgClass: 'bg-bage-200'
-        },
-        {
-            id: 3,
-            name: 'chair',
-            description: 'Open 9.00 am to 5.00pm everyday',
-            icon: easysofa,
-            bgClass: 'bg-bage-200'
-        },
-        {
-            id: 3,
-            name: 'chair',
-            description: 'Open 9.00 am to 5.00pm everyday',
-            icon: easysofa,
-            bgClass: 'bg-bage-200'
-        },
-        {
-            id: 3,
-            name: 'chair',
-            description: 'Open 9.00 am to 5.00pm everyday',
-            icon: easysofa,
-            bgClass: 'bg-bage-200'
-        },
-    ]
-
     return (
         
-            <div className='grid mt-8 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
-            
-            {
-                cardData.map(card => <Furniture
-                    key={card.id}
-                    card={card}
-                ></Furniture>)
-            }
+        <div className="hero my-20">
+        <div className="hero-content flex-col lg:flex-row">
+          
+            <div className='w-1/2'>
+                <p className="text-2xl font-bold text-orange-600">About Our Service</p>
+                <h1 className="my-5 text-5xl font-bold">
+                Let your living space <br />
+                live up to your expectations<br />
+                with partex resale products. </h1>
+                <p className="py-6">WE DELIVER IN Bangladesh: Dhaka City, Dhaka Division, Mymensingh Division, 
+                Chittagong City, Chittagong Division, Rajshahi Division, Rangpur Division, Khulna Division, 
+                Sylhet Division, Barisal Division</p>
+                <p className="py-6">Overseas: Please contact your respective showroom </p>
+                
+            </div>
+            <div className='relative w-1/2'>
+                <img src={sofa} alt="" className="w-4/5 h-full rounded-lg shadow-2xl" />
+               
+            </div>
         </div>
+    </div>
+        
+
         
     );
 };

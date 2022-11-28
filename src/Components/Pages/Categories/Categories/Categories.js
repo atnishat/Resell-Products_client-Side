@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import CategoriesOption from './CategoriesOption';
 
 const Categories = () => {
-    // const [appointmentOption, setAppointmentOption] = useState([]);
 
 
     const { data: appointmentOption = [], isLoading } = useQuery({
@@ -14,13 +13,6 @@ const Categories = () => {
             return data
         }
     });
-
-
-    // useEffect( () =>{
-    //     fetch('https://used-products-server-side.vercel.app/categoriesOption')
-    //     .then(res => res.json())
-    //     .then(data => setAppointmentOption(data))
-    // },[])
 
 
     return (
