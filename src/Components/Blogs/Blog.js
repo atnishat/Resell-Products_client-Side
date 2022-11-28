@@ -5,7 +5,7 @@ const Blog = () => {
     return (
         <div>
 
-            <div className='ques-1'>
+            <div className='ques-1 text-center font-medium bg-primary text-white'>
                 <h3> What are the different ways to manage a state in a React application?</h3>
                 <p>There are four main types of state you need to properly manage in your React apps:
                     1.Local state:Local state is data we manage in one or another component.
@@ -22,7 +22,7 @@ const Blog = () => {
                     4.URL state: Data that exists on our URLs, including the pathname and query parameters.</p>
 
             </div>
-            <div className='ques-2'>
+            <div className='ques-2 text-center font-medium bg-primary text-white'>
                 <h3> How does prototypical inheritance work?</h3>
                 <p>The Prototypal Inheritance is a feature in javascript used to add
                     methods and properties in objects. It is a method by which an object
@@ -31,7 +31,7 @@ const Blog = () => {
                     we use Object.getPrototypeOf and Object..</p>
 
             </div>
-            <div className='ques-3'>
+            <div className='ques-3 text-center font-medium bg-primary text-white'>
                 <h3> What is a unit test? Why should we write unit tests?</h3>
                 <p>The main objective of unit testing is to isolate written code to
                     test and determine if it works as intended.Unit testing is an important step
@@ -39,7 +39,7 @@ const Blog = () => {
                     early flaws in code which may be more difficult to find in later testing stages.</p>
 
             </div>
-            <div className='ques-4'>
+            <div className='ques-4 text-center font-medium bg-primary text-white'>
                 <h3>React vs. Angular vs. Vue?</h3>
                 <p>React requires solid JavaScript skills, while Vue.js is more oriented to novice developers. 
                     Similar to React, Vue.js enables writing with JSX, but the components are written with HTML

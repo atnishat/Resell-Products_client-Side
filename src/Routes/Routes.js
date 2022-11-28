@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Blog from "../Components/Blogs/Blog";
+import PagenotFound from "../Components/Pagenotfound/PagenotFound";
 import Categories from "../Components/Pages/Categories/Categories/Categories";
 import AddProducts from "../Components/Pages/Dashboard/AddProducts/AddProducts";
 import AllUsers from "../Components/Pages/Dashboard/AllUsers/AllUsers";
@@ -48,6 +49,10 @@ export const router = createBrowserRouter([
                 element:<Product></Product>,
                 loader: ({params})  => fetch(`https://used-products-server-side.vercel.app/category/${params.id}`)
                 
+            },
+            {
+                path:'*',
+                element:<PagenotFound></PagenotFound>
             }
         
         ]

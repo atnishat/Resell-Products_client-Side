@@ -1,12 +1,10 @@
 .ques-1 {
     width: 800px;
-    height: 250px;
-    border: 2px solid #0000006b;
+    height: 650px;
     margin-top: 150px;
     margin-left: 300px;
     border-radius: 10px;
-    box-shadow: 10px 20px #00000021;
-    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+   
 }
 
 .ques-1 h3 {
@@ -29,12 +27,8 @@
 .ques-2 {
     width: 800px;
     height: 250px;
-    border: 2px solid #0000006b;
     margin-top: 150px;
     margin-left: 300px;
-    border-radius: 10px;
-    box-shadow: 10px 20px #00000021;
-    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
 }
 
 .ques-2 h3 {
@@ -57,12 +51,8 @@
 .ques-3 {
     width: 800px;
     height: 300px;
-    border: 2px solid #0000006b;
     margin-top: 150px;
     margin-left: 300px;
-    border-radius: 10px;
-    box-shadow: 10px 20px #00000021;
-    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
 }
 
 .ques-3 h3 {
@@ -85,12 +75,8 @@
 .ques-4 {
     width: 800px;
     height: 250px;
-    border: 2px solid #0000006b;
     margin-top: 150px;
     margin-left: 300px;
-    border-radius: 10px;
-    box-shadow: 10px 20px #00000021;
-    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
 }
 
 .ques-4 h3 {
